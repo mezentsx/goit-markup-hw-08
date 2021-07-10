@@ -1,0 +1,121 @@
+.team-list {
+  display: flex;
+}
+
+.team-list__item {
+  background: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list__item + .team-list__item {
+  margin-left: 30px;
+}
+
+.team-list__card {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.team-list__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.team-list__text {
+  color: $primary-text-color;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.social-networks {
+  display: flex;
+}
+
+.social-networks__item {
+  box-shadow: none;
+}
+
+//   display: inline-flex;
+//   align-items: center;
+//   width: 44px;
+//   height: 44px;
+//   background: var(--primary-white-color);
+//   background-size: 20px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   border-radius: 50%;
+
+.social-networks__item + .social-networks__item {
+  margin-left: 10px;
+}
+
+.social-networks__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background: $primary-white-color;
+  fill: $klients-fill;
+
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+    background: $accent-color;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+// .social-networks .item:nth-child(1) {
+//   background-image: url(../images/icons.svg/instagram2.svg);
+// }
+
+// .social-networks .item:nth-child(2) {
+//   background-image: url(../images/icons.svg/twitter2.svg);
+// }
+
+// .social-networks .item:nth-child(3) {
+//   background-image: url(../images/icons.svg/facebook2.svg);
+// }
+
+// .social-networks .item:nth-child(4) {
+//   background-image: url(../images/icons.svg/linkedin2.svg);
+// }
+
+// .social-networks .item:hover {
+//   background-color: var(--accent-color);
+//   cursor: pointer;
+// }
+
+// .social-networks .item:nth-child(1):hover {
+//   background-image: url(../images/icons.svg/instagram.svg);
+// }
+
+// .social-networks .item:nth-child(2):hover {
+//   background-image: url(../images/icons.svg//twitter.svg);
+// }
+
+// .social-networks .item:nth-child(3):hover {
+//   background-image: url(../images/icons.svg/facebook.svg);
+// }
+
+// .social-networks .item:nth-child(4):hover {
+//   background-image: url(../images/icons.svg/linkedin.svg);
+// }
