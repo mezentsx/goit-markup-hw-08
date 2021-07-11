@@ -1,50 +1,68 @@
 .feature-list {
-  display: flex;
-  margin: 0;
-  padding: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: $grey-color;
+    padding: 25px 0;
+    margin-bottom: 30px;
+  }
 }
 
 .feature-list__item {
-  width: 270px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
-.feature-list__item + .feature-list__item {
-  margin-left: 30px;
+.feature-list__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
-.feature-list__item::before {
-  display: block;
-  content: '';
-  /* width: 270px; */
-  height: 120px;
-  background: $grey-color;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
+// .feature-list__item::before {
+//   display: block;
+//   content: '';
+//   /* width: 270px; */
+//   height: 120px;
+//   background: $grey-color;
+//   border-radius: 4px;
+//   margin-bottom: 30px;
+// }
 
-.feature-list__item:nth-child(1):before {
-  background-image: url(/images/icons.svg/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+// .feature-list__item:nth-child(1):before {
+//   background-image: url(/images/icons.svg/antenna.svg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
 
-.feature-list__item:nth-child(2):before {
-  background-image: url(/images/icons.svg/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+// .feature-list__item:nth-child(2):before {
+//   background-image: url(/images/icons.svg/clock.svg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
 
-.feature-list__item:nth-child(3):before {
-  background-image: url(/images/icons.svg/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+// .feature-list__item:nth-child(3):before {
+//   background-image: url(/images/icons.svg/diagram.svg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
 
-.feature-list__item:nth-child(4):before {
-  background-image: url(/images/icons.svg/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+// .feature-list__item:nth-child(4):before {
+//   background-image: url(/images/icons.svg/astronaut.svg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
 
 .feature-list__title {
   font-weight: 700;
@@ -53,6 +71,10 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .feature-list__text {

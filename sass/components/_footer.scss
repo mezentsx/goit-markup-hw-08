@@ -6,15 +6,60 @@
 
 .page-footer .container {
   display: flex;
-  align-items: baseline;
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 767px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+}
+
+.page-footer__container {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    align-items: center;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-address {
-  margin-right: 70px;
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
+  flex-direction: column;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    margin-right: 70px;
+  }
 }
 
 .address {
-  font-style: inherit;
+  font-style: normal;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
 }
 
 .address__town {
@@ -25,25 +70,33 @@
   margin-bottom: 9px;
 }
 
-.footer-list__item + .footer-list__item {
-  margin-top: 9px;
+.footer-list__item:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-list__link {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     color: $accent-color;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 .footer-social {
   width: 206px;
-  margin-right: 93px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .footer__title {
@@ -55,6 +108,10 @@
   margin-top: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-social-list {
