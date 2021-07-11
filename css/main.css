@@ -927,12 +927,13 @@ a {
 
 .company-list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .company-list__item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  margin: 15px;
   outline: none;
 }
 
