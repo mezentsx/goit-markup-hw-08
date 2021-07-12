@@ -19,6 +19,7 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+
   @media screen and(min-width: 480px) {
     width: 480px;
   }
@@ -72,6 +73,7 @@ a {
 
 .section {
   padding: 60px 0px;
+
   @media screen and (min-width: 1200px) {
     padding: 94px 0;
   }

@@ -66,13 +66,13 @@
   }
 }
 
-.portfolio-list__item:nth-child(3n) {
-  margin-right: 0;
-}
+// .portfolio-list__item:nth-child(3n) {
+//   margin-right: 0;
+// }
 
-.portfolio-list__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
+// .portfolio-list__item:nth-last-child(-n + 3) {
+//   margin-bottom: 0;
+// }
 
 .portfolio-list__link {
   display: flex;
