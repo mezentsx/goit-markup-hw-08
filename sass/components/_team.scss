@@ -19,15 +19,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 15px;
-
-  @media screen and (min-width: 480px) {
-    margin: 15px;
-  }
+  width: 100%;
   @media screen and (min-width: 768px) {
-    width: 354px;
+    flex-basis: calc((100% - 60px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
@@ -36,9 +33,9 @@
   height: auto;
 }
 
-// .team-list__item + .team-list__item {
-//   margin-left: 30px;
-// }
+.team-list__item + .team-list__item {
+  margin-left: 30px;
+}
 
 .team-list__card {
   background: $primary-white-color;
