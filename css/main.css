@@ -900,6 +900,19 @@ a {
 .team-list__img {
   max-width: 100%;
   height: auto;
+  width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__img {
+    width: 270px;
+  }
 }
 
 .team-list__card {
